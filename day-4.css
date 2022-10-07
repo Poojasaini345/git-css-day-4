@@ -1,0 +1,116 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+}
+
+.card{
+    text-align: center;
+    height: 300px;
+    background-image: url(./bg.jpg);
+    margin-left: 50px;
+   margin-right: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.picture{
+    margin: 70px auto;
+    width: 200px;
+    height: 30px;
+    background-color: brown;
+    color: black;
+    border-radius: 10px;
+}
+
+.button{
+  
+    float: right;
+    /* display: flex; */
+    margin-right: 350px;
+    margin-top: 462px;
+    padding: 13px;
+
+}
+.img{
+    height: 30px;
+    width: 50px;
+}
+.line{
+    margin-top: 500px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.c1{
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    color: aliceblue;
+    border: 2px groove aqua;
+}
+
+@media screen and (max-width:700px) {
+    .container{
+        flex-direction: column;
+    }
+}
+
+
+.ipad-botton{
+    background-color: aqua;
+    height: 50px;
+    width: 150px;
+    /* margin-left: 600px; */
+    font-size: larger;
+    color: black;
+    text-align:center ;
+    border-radius: 10px;
+}
+
+.ipad{
+    display: flex;
+    justify-content: center;
+    /* margin:10px ; */
+}
+
+@media screen and (max-width:800px) and (min-width:480px) {
+    .ipad{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ipad-botton{
+    background-color:palevioletred;
+    height: 50px;
+    width: 150px;
+    margin-left: 600px;
+    font-size: larger;
+    color:wheat;
+    text-align:center ; 
+    }
+    
+}
+
+@media screen and (max-width:480px) and (min-width:300px){
+    .ipad{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .ipad-botton{
+    background-color:greenyellow;
+    height: 50px;
+    width: 150px;
+    margin-left: 600px;
+    font-size: larger;
+    color:brown;
+    text-align:center ; 
+    } 
+} 
